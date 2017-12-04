@@ -68,6 +68,11 @@ a {
     opacity: .4;
 }
 
+.splash-drawing {
+    margin: 20px auto;
+    width: 1000px;
+}
+
 .chart {
     margin: 20px auto;
     width: 600px;
