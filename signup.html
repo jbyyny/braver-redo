@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,800' rel='stylesheet' type='text/css'>
+	
+		<title>Braver Sign Up</title>
+
+<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/form.css">
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+	
+  <body>
+    <div class="container">
+      <h1>Braver Sign Up</h1>
+
+      <form>
+        <fieldset>
+          <legend>Your Contact Info</legend>
+          <br/>
+          <!-- Let the "First name" input field automatically get focus when the page load -->
+          <div class="form-row">    
+            <input type="text" name="first_name" id="first_name" autofocus>
+            <label for="first_name">First Name</label>
+          </div>
+              
+          <div class="form-row">    
+            <input type="text" name="last_name" id="last_name">
+            <label for="last_name">Last Name</label>
+          </div>
+
+          <div class="form-row">
+            <input type="text" name="phone_number" maxlength="10" id="phone_number">
+            <label for="phone_number">Phone Number</label>
+          </div>
+
+          <div class="form-row">
+            <input type="text" name="street_address_1" id="street_address_1">
+            <label for="street_address_1">Street Address</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="street_address_2" id="street_address_2">
+            <label for="street_address_2">Street Address</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="city" id="city">
+            <label for="city">City</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="state" id="state">
+            <label for="state">State</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="postal_code" id="zipcode">
+            <label for="zipcode">Postal Code</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skills &amp; Interests</legend>
+          <br />
+
+          <!-- Add select to form-row for different styling -->
+          <div class="form-row">
+            <label>Course</label>
+            <select name="interests">
+              <option>Course</option>
+              <optgroup label="Web Development">
+                <option>Front-end</option>
+                <option>Back-end</option>
+              </optgroup>
+              <optgroup label="Design">
+                <option>Visual Design</option>
+                <option>User Experience</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-row select">
+            <label for="past-experience">Past Experience</label>
+            <textarea name="past_experience"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Anything Else?</legend>
+          <br />
+          <div class="form-row">
+            <label for="referral">Referral</label>
+            <select name="referral" id="referral">
+              <option>Referral</option>
+              <option>Friend</option>
+              <option>Instructor</option>
+              <option>Online</option>
+            </select>
+          </div>
+
+          <div class="form-row select">
+            <label for="comments">Comments</label>
+            <textarea id="comments"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <input type="submit" value="Save Draft" class="submit-button" />
+          <input type="submit" value="Submit" class="submit-button" />
+        </fieldset>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
